@@ -1,0 +1,37 @@
+    Usuario:
+        IdUsuario (chave primaria)
+        Nome not null varchar(50)
+        Email not null varchar(50)
+        Senha not null varchar(50)
+        CriadoEm not null datetime.now()
+
+    Tarefa:
+        IdTarefa (chave primaria)
+        IdUsuario (chave estrangeira referenciando usuarios)
+        Titulo
+        Descricao
+        DataEntrega
+        Prioridade
+
+    Categoria:
+        IdCategoria (chave primaria)
+        Nome
+        Descricao
+
+    CategoriaTarefa:
+        IdCategoriaTarefa (chave primaria)
+        IdTarefa( chave estrangeira referenciando tarefa)
+        IdCategoria (chave estrangeira referenciando categoria)
+
+    Lembretes:
+        IdLembretes (chave primaria)
+        IdTarefa (chave estrangeira referenciando Tarefa)
+        DataLembrete
+        HorarioLembrete
+
+    Comentarios:
+        IdComentario (chave primaria)
+        IdTarefa (chave estrangeira referenciando Tarefa)
+        IdUsuario (chave estrangeira referenciando Usuario)
+        TextoComentario
+        CriadoEm

@@ -7,10 +7,10 @@ DISCIPLINA: FUNDAMENTOS DE BANCO DE DADOS
 TRABALHO FINAL DA DISCIPLINA
 
 Definição e Delimitação: 
-- O trabalho consiste na elaboração e implementação de um projeto de banco de dados que contenha no mínimo 6 tabelas relacionadas entre si.
-- Cada tabela deverá ser implementada integralmente contendo chave primária e as respectivas chaves estrangeiras.
-- A nomenclatura das tabelas e atributos deverá seguir o padrão CamelCase.
-- Não poderá conter tabelas sem relacionamento (que não receba ou não ceda relacionamento).
+- O trabalho consiste na elaboração e implementação de um projeto de banco de dados que contenha no mínimo 6 tabelas relacionadas entre si. ok
+- Cada tabela deverá ser implementada integralmente contendo chave primária e as respectivas chaves estrangeiras. ok
+- A nomenclatura das tabelas e atributos deverá seguir o padrão CamelCase. ok
+- Não poderá conter tabelas sem relacionamento (que não receba ou não ceda relacionamento). ok
 - Todas as tabelas deverão conter dados, no mínimo 10 registros cada.
 	- Em todo o projeto, as tabelas deverão conter mais do que 3 atributos.
 - Deverão ser gerados:
