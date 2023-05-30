@@ -1,20 +1,49 @@
+-- Tabela Usuario
 CREATE TABLE IF NOT EXISTS Usuario (
-  IdUsuario INT PRIMARY KEY,
-  Nome VARCHAR(50),
-  Email VARCHAR(100),
-  Senha VARCHAR(100),
-  CriadoEm timestamp 
+    IdUsuario SERIAL PRIMARY KEY,
+    Nome VARCHAR(50) NOT NULL,
+    Email VARCHAR(50) NOT NULL,
+    Senha VARCHAR(50) NOT NULL,
+    CriadoEm TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
-INSERT INTO Usuario (IdUsuario, Nome, Email, Senha, CriadoEM)
-VALUES
-  (1, 'JohnDoe', 'johndoe@example.com', 'password123', '2023-05-01 10:00:00'),
-  (2, 'JaneSmith', 'janesmith@example.com', 'password456', '2023-05-02 11:30:00'),
-  (3, 'MikeJohnson', 'mikejohnson@example.com', 'password789', '2023-05-03 14:45:00'),
-  (4, 'EmilyBrown', 'emilybrown@example.com', 'passwordabc', '2023-05-04 09:15:00'),
-  (5, 'DavidWilson', 'davidwilson@example.com', 'passworddef', '2023-05-05 16:20:00'),
-  (6, 'SarahTaylor', 'sarahtaylor@example.com', 'passwordxyz', '2023-05-06 12:00:00'),
-  (7, 'MichaelDavis', 'michaeldavis@example.com', 'password123', '2023-05-07 08:30:00'),
-  (8, 'LauraMiller', 'lauramiller@example.com', 'password456', '2023-05-08 10:45:00'),
-  (9, 'DanielThompson', 'danielthompson@example.com', 'password789', '2023-05-09 13:15:00'),
-  (10, 'OliviaClark', 'oliviaclark@example.com', 'passwordabc', '2023-05-10 15:00:00');
+-- Tabela Chamado
+CREATE TABLE IF NOT EXISTS Chamado (
+    IdChamado SERIAL PRIMARY KEY,
+    IdUsuario INTEGER REFERENCES Usuario(IdUsuario),
+    Titulo VARCHAR(50) NOT NULL,
+    Descricao VARCHAR(50) NOT NULL,
+    DataEntrega TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    Prioridade VARCHAR(50) NOT NULL
+);
+
+-- Tabela Categoria
+CREATE TABLE IF NOT EXISTS Categoria (
+    IdCategoria SERIAL PRIMARY KEY,
+    Nome VARCHAR(50) NOT NULL,
+    Descricao VARCHAR(100) NOT NULL
+);
+
+-- Tabela CategoriaChamado
+CREATE TABLE IF NOT EXISTS CategoriaChamado (
+    IdCategoriaTarefa SERIAL PRIMARY KEY,
+    IdChamado INTEGER REFERENCES Chamado(IdChamado),
+    IdCategoria INTEGER REFERENCES Categoria(IdCategoria)
+);
+
+-- Tabela Status
+CREATE TABLE IF NOT EXISTS Status (
+    IDStatus INTEGER PRIMARY KEY,
+    IdChamado INTEGER REFERENCES Chamado(IdChamado),
+    HorarioLembrete TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    Status VARCHAR(50) NOT NULL
+);
+
+-- Tabela Mensagem
+CREATE TABLE IF NOT EXISTS Mensagem (
+    IdComentario SERIAL PRIMARY KEY,
+    IdChamado INTEGER REFERENCES Chamado(IdChamado),
+    IdUsuario INTEGER REFERENCES Usuario(IdUsuario),
+    TextoComentario TEXT NOT NULL,
+    CriadoEm TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
