@@ -1,3 +1,56 @@
+A instrução SELECT é uma das principais e mais utilizadas instruções em SQL (Structured Query Language). Ela é usada para recuperar dados de um banco de dados. Com a instrução SELECT, você pode especificar as colunas que deseja selecionar, as tabelas das quais deseja recuperar os dados e as condições que os registros devem atender.
+
+A sintaxe básica da instrução SELECT é a seguinte:
+SELECT coluna1, coluna2, ... FROM tabela
+
+SELECT indica que você está fazendo uma consulta para selecionar dados; coluna1, coluna2, ... são as colunas que você deseja selecionar. Você pode selecionar todas as colunas usando o asterisco * ou especificar colunas individuais separadas por vírgulas. FROM tabela especifica a tabela da qual você deseja recuperar os dados.
+
+Além da sintaxe básica, a instrução SELECT pode ser expandida para incluir várias cláusulas opcionais, como:
+A cláusula WHERE, que permite filtrar os registros com base em uma condição específica. Por exemplo, você pode selecionar apenas os registros em que o valor de uma coluna seja igual a um determinado valor.
+A cláusula ORDER BY, que permite classificar os resultados em uma ordem específica, seja em ordem crescente ou decrescente, com base nos valores de uma ou mais colunas.
+A cláusula JOIN, que permite combinar dados de várias tabelas com base em colunas relacionadas.
+A cláusula GROUP BY, que permite agrupar registros com base nos valores de uma ou mais colunas e aplicar funções de agregação, como COUNT, SUM, AVG, entre outras.
+
+E muitas outras cláusulas e operadores avançados para refinar e manipular os resultados da consulta.
+Ao usar a instrução SELECT, é importante conhecer a estrutura e os relacionamentos das tabelas no banco de dados, para que você possa selecionar as colunas corretas e usar as cláusulas adequadas para obter os resultados desejados.
+
+As funções de agregação são utilizadas em consultas SQL para realizar cálculos em conjuntos de valores e retornar um único valor resumido como resultado. Essas funções operam em colunas de uma tabela ou em conjuntos de resultados retornados por uma consulta, permitindo realizar operações estatísticas e resumir os dados.
+Aqui estão algumas das funções de agregação mais comuns disponíveis em SQL:
+COUNT(): Essa função retorna o número de linhas ou registros em um conjunto de resultados. Ela pode ser usada com uma coluna específica ou com a cláusula DISTINCT para contar valores distintos.
+SUM(): Essa função retorna a soma dos valores de uma coluna numérica em um conjunto de resultados.
+AVG(): Essa função retorna a média dos valores de uma coluna numérica em um conjunto de resultados.
+MIN(): Essa função retorna o valor mínimo de uma coluna em um conjunto de resultados.
+MAX(): Essa função retorna o valor máximo de uma coluna em um conjunto de resultados.
+Essas funções podem ser usadas em conjunto com a cláusula GROUP BY para realizar cálculos agregados por grupos específicos. Por exemplo, você pode usar a função SUM() em combinação com o GROUP BY para obter a soma dos valores em uma coluna para cada grupo distinto.
+As funções de agregação são úteis para obter informações resumidas e estatísticas sobre os dados em uma tabela ou conjunto de resultados. Elas desempenham um papel fundamental na análise e no processamento de dados em SQL.
+É importante ressaltar que, ao utilizar funções de agregação, é necessário considerar as restrições do banco de dados, como índices, tamanho do conjunto de dados e desempenho, para garantir consultas eficientes e resultados precisos.
+
+Exercícios para fixação:
+Considere a tabela PESSOA com os campos: Id, DataNascimento, Nome, Sexo, Telefone, Email, Salário e ExerceCargoChefia.
+Insira 1000 registros nela usando um gerador de SQL: https://www.mockaroo.com/.
+Use datas de nascimento entre 1950 e 1995.
+
+Crie consultas SQL para responder as seguintes questões:
+Selecione as primeiras 100 linhas da tabela
+Selecione as primeiras 200 linhas da tabela, retornando os dados da seguinte forma, ordenado pelo nome:
+Id: Nome (Sexo) – Contato: telefone - email  
+Selecione todas as mulheres, calculando a idade em anos e ordene da mais velha para a mais nova.
+Selecione todos os homens, calculando a idade em anos e ordene do mais novo para o mais velho.
+O departamento de TI deseja saber qual o domínio dos e-mails de todas as pessoas que exercem cargo de chefia.
+Selecione todas as mulheres que ganham mais que U$ 5.000,00 com idade superior a 20 anos.
+Selecione todos homens que ganham mais que U$ 5.000,00 com idade entre 30 e 40 anos.
+Selecione o menor salário entre as mulheres
+Selecione o menor salário entre as mulheres que exercem cargo de chefia com idade maior que 40 anos
+Selecione a média salarial dos homens
+Selecione a média salarial das mulheres
+Selecione a média salarial entre homens e mulheres nascidos na década de 80.
+Quantos homens nasceram em Abril de 1975 e ocupam função de chefia?
+Quantas mulheres ganham mais que U$ 5.000 e que nasceram no mês de julho
+Selecione o maior salário entre homens e mulheres que nasceram após os anos 2000
+
+
+=============================================================================================================
+
 INSTITUTO FEDERAL DE MATO GROSSO - CAMPUS CUIABÁ
 DEPARTAMENTO DE COMPUTAÇÃO
 TECNOLOGIA EM SISTEMAS PARA INTERNET
@@ -7,14 +60,14 @@ DISCIPLINA: FUNDAMENTOS DE BANCO DE DADOS
 TRABALHO FINAL DA DISCIPLINA
 
 Definição e Delimitação: 
-- O trabalho consiste na elaboração e implementação de um projeto de banco de dados que contenha no mínimo 6 tabelas relacionadas entre si. ok
-- Cada tabela deverá ser implementada integralmente contendo chave primária e as respectivas chaves estrangeiras. ok
-- A nomenclatura das tabelas e atributos deverá seguir o padrão CamelCase. ok
-- Não poderá conter tabelas sem relacionamento (que não receba ou não ceda relacionamento). ok
+- O trabalho consiste na elaboração e implementação de um projeto de banco de dados que contenha no mínimo 6 tabelas relacionadas entre si.
+- Cada tabela deverá ser implementada integralmente contendo chave primária e as respectivas chaves estrangeiras.
+- A nomenclatura das tabelas e atributos deverá seguir o padrão CamelCase.
+- Não poderá conter tabelas sem relacionamento (que não receba ou não ceda relacionamento).
 - Todas as tabelas deverão conter dados, no mínimo 10 registros cada.
 	- Em todo o projeto, as tabelas deverão conter mais do que 3 atributos.
 - Deverão ser gerados:
-	- 1 instrução de DDL Create para cada tabela  / tabela deverá ter no minímo 10 registros;
+	- 1 instrução de DDL Create para cada tabela
 	- 1 instrução de DML Insert, Update e Delete para cada tabela
 	- Ao menos 10 instruções DML Select que incluam Junções para "detalhar" os dados inseridos:
 		- Nessas instruções, considerar o Apelido para tabelas e campos, com o intuito de gerar instruções bem documentadas.
@@ -23,7 +76,7 @@ Definição e Delimitação:
 
 Formação:
 - Duplas. Somente em caso excepcional será admitido trabalho individual ou em trio.
-
+d
 Avaliação:
 - Os trabalhos serão avaliados pela consistência do problema resolvido e do atendimento aos critérios acima estabelecidos
 
@@ -33,8 +86,3 @@ Entrega:
 Observação:
 - Os grupos não poderão implementar projetos semelhantes.
 - As aulas ainda acontecerão normalmente, para acompanhamento do projeto e também aplicação de demais conteúdos pertinentes.
-
-
-—--------------------------------------------------------------------------------------------------------------------
-
-Escolher um caso.  (Controle de contratos de empréstimos consignados, CONTROLE DE CAIXA, ETC)
