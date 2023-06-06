@@ -25,29 +25,6 @@ Essas funções podem ser usadas em conjunto com a cláusula GROUP BY para reali
 As funções de agregação são úteis para obter informações resumidas e estatísticas sobre os dados em uma tabela ou conjunto de resultados. Elas desempenham um papel fundamental na análise e no processamento de dados em SQL.
 É importante ressaltar que, ao utilizar funções de agregação, é necessário considerar as restrições do banco de dados, como índices, tamanho do conjunto de dados e desempenho, para garantir consultas eficientes e resultados precisos.
 
-Exercícios para fixação:
-Considere a tabela PESSOA com os campos: Id, DataNascimento, Nome, Sexo, Telefone, Email, Salário e ExerceCargoChefia.
-Insira 1000 registros nela usando um gerador de SQL: https://www.mockaroo.com/.
-Use datas de nascimento entre 1950 e 1995.
-
-Crie consultas SQL para responder as seguintes questões:
-Selecione as primeiras 100 linhas da tabela
-Selecione as primeiras 200 linhas da tabela, retornando os dados da seguinte forma, ordenado pelo nome:
-Id: Nome (Sexo) – Contato: telefone - email  
-Selecione todas as mulheres, calculando a idade em anos e ordene da mais velha para a mais nova.
-Selecione todos os homens, calculando a idade em anos e ordene do mais novo para o mais velho.
-O departamento de TI deseja saber qual o domínio dos e-mails de todas as pessoas que exercem cargo de chefia.
-Selecione todas as mulheres que ganham mais que U$ 5.000,00 com idade superior a 20 anos.
-Selecione todos homens que ganham mais que U$ 5.000,00 com idade entre 30 e 40 anos.
-Selecione o menor salário entre as mulheres
-Selecione o menor salário entre as mulheres que exercem cargo de chefia com idade maior que 40 anos
-Selecione a média salarial dos homens
-Selecione a média salarial das mulheres
-Selecione a média salarial entre homens e mulheres nascidos na década de 80.
-Quantos homens nasceram em Abril de 1975 e ocupam função de chefia?
-Quantas mulheres ganham mais que U$ 5.000 e que nasceram no mês de julho
-Selecione o maior salário entre homens e mulheres que nasceram após os anos 2000
-
 
 =============================================================================================================
 
@@ -64,19 +41,32 @@ Definição e Delimitação:
 - Cada tabela deverá ser implementada integralmente contendo chave primária e as respectivas chaves estrangeiras.
 - A nomenclatura das tabelas e atributos deverá seguir o padrão CamelCase.
 - Não poderá conter tabelas sem relacionamento (que não receba ou não ceda relacionamento).
+
+
 - Todas as tabelas deverão conter dados, no mínimo 10 registros cada.
 	- Em todo o projeto, as tabelas deverão conter mais do que 3 atributos.
+	(ddl-insert-dados)
+
 - Deverão ser gerados:
 	- 1 instrução de DDL Create para cada tabela
+	(ddl-create-table)
+
+
 	- 1 instrução de DML Insert, Update e Delete para cada tabela
+
+
+
+
 	- Ao menos 10 instruções DML Select que incluam Junções para "detalhar" os dados inseridos:
 		- Nessas instruções, considerar o Apelido para tabelas e campos, com o intuito de gerar instruções bem documentadas.
 		- Em cada consulta, deverão ser usadas as cláusulas WHERE e ORDER BY.
 		- Em ao menos 3 consultas, deverão utilizar 1 função de sistema do SGBD escolhido.
 
+
+
 Formação:
 - Duplas. Somente em caso excepcional será admitido trabalho individual ou em trio.
-d
+
 Avaliação:
 - Os trabalhos serão avaliados pela consistência do problema resolvido e do atendimento aos critérios acima estabelecidos
 

@@ -26,18 +26,19 @@ CREATE TABLE IF NOT EXISTS Categoria (
 
 -- Tabela CategoriaChamado
 CREATE TABLE IF NOT EXISTS CategoriaChamado (
-    IdCategoriaTarefa SERIAL PRIMARY KEY,
+    IdCategoriaChamado SERIAL PRIMARY KEY,
     IdChamado INTEGER REFERENCES Chamado(IdChamado),
     IdCategoria INTEGER REFERENCES Categoria(IdCategoria)
 );
 
 -- Tabela Status
 CREATE TABLE IF NOT EXISTS Status (
-    IDStatus INTEGER PRIMARY KEY,
+    IDStatus INTEGER,
     IdChamado INTEGER REFERENCES Chamado(IdChamado),
     HorarioLembrete TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     Status VARCHAR(50) NOT NULL
 );
+
 
 -- Tabela Mensagem
 CREATE TABLE IF NOT EXISTS Mensagem (
