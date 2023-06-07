@@ -61,6 +61,14 @@ VALUES
 (8, 'Chamado 18', 'Tela defeituosa', '2023-04-29', 'Média'),
 (9, 'Chamado 19', 'Bateria esgotada', '2023-05-01', 'Média'),
 (10, 'Chamado 20', 'Teclado ou touchpad defeituosos', '2023-05-02', 'Média'),
+(10, 'Chamado 31', 'Conexões de rede defeituosas', '2023-05-02', 'Média'),
+(9, 'Chamado 32', 'Problemas de alimentação', '2023-05-03', 'Alta'),
+(8, 'Chamado 33', 'Problemas de alimentação', '2023-05-03', 'Média'),
+(8, 'Chamado 34', 'Falhas no disco rígido', '2023-05-05', 'Alta'),
+(8, 'Chamado 35', 'Falhas no disco rígido', '2023-05-05', 'Alta'),
+(7, 'Chamado 36', 'Superaquecimento do CPU', '2023-05-05', 'Alta'),
+(6, 'Chamado 37', 'Superaquecimento do CPU', '2023-05-05', 'Alta'),
+
 
 
 -- Inserindo dados na tabela "CategoriaChamado"
@@ -86,6 +94,13 @@ VALUES
 (18,1),
 (19,1),
 (20,1),
+(31,1),
+(32,1),
+(33,1),
+(34,1),
+(35,1),
+(36,1),
+(37,1),
 
 
 -- Inserindo dados na tabela "Status"
