@@ -150,11 +150,11 @@ VALUES
 -- Inserindo dados na tabela "Status"
 INSERT INTO Status (IdChamado, HorarioLembrete, Status)
 VALUES
-(1, NOW(), 'Em progresso'), 
-(2, NOW(), 'Aguardando'),
-(3, NOW(), 'Concluído'),
-(4, NOW(), 'Em progresso'),
-(5, NOW(), 'Aguardando'),
+(1, '2023-02-26', 'Em progresso'), 
+(2, '2023-02-18', 'Aguardando'),
+(3, '2023-03-13', 'Concluído'),
+(4, '2023-03-16', 'Em progresso'),
+(5, '2023-03-23', 'Aguardando'),
 (6, NOW(), 'Concluído'),
 (7, NOW(), 'Em progresso'),
 (8, NOW(), 'Aguardando'),
@@ -166,11 +166,11 @@ VALUES
 -- Inserindo dados na tabela "Mensagem"
 INSERT INTO Mensagem (IdChamado, IdUsuario, TextoComentario, CriadoEm)
 VALUES
-(1, 1, 'Problema com telefone', NOW()),
-(2, 2, 'Sistema trava na tela de login', NOW()),
-(3, 3, 'Cliente com crédito bloqueado',NOW()),
-(4, 4, 'Impressora sem fio não conecta',NOW()),
-(5, 5, 'O sistema demora pra responder quando está na tela de orçamento',NOW()),
+(1, 1, 'Problema com telefone', '2023-02-23'),
+(2, 2, 'Sistema trava na tela de login', '2023-02-15'),
+(3, 3, 'Cliente com crédito bloqueado','2023-03-10'),
+(4, 4, 'Impressora sem fio não conecta','2023-03-13'),
+(5, 5, 'O sistema demora pra responder quando está na tela de orçamento','2023-03-20'),
 (6, 6, 'O computador bloqueia meu pendrive com as planilhas de venda',NOW()),
 (7, 7, 'Teclado usb não funciona em nenhuma entrada',NOW()),
 (8, 8, 'Monitor desliga no meio do atendimento a cada meia hora',NOW()),
