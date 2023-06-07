@@ -51,7 +51,10 @@ VALUES
 (8, 'Chamado 8', 'Monitor desligando de tempos em tempos', NOW(), 'Média'),
 (9, 'Chamado 9', 'Computador não liga', NOW(), 'Baixa'),
 (10, 'Chamado 10', 'Usuario não loga na vpn', NOW(), 'Alta'),
-(2, 'Chamado 11', 'Computador lento', NOW(), 'Média');
+(2, 'Chamado 11', 'Computador lento', NOW(), 'Média'),
+(9, 'Chamado 12', 'Internet não funciona', '2023-05-25', 'Média');
+
+
 -- Inserindo dados na tabela "CategoriaChamado"
 INSERT INTO CategoriaChamado (IdChamado, IdCategoria)
 VALUES
@@ -65,7 +68,8 @@ VALUES
 (8, 8),
 (9, 9),
 (10, 10),
-(11, 4);
+(11, 4),
+(12, 4);
 
 -- Inserindo dados na tabela "Status"
 INSERT INTO Status (IdChamado, HorarioLembrete, Status)
@@ -79,7 +83,9 @@ VALUES
 (7, NOW(), 'Em progresso'),
 (8, NOW(), 'Aguardando'),
 (9, NOW(), 'Concluído'),
-(10, NOW(), 'Em progresso');
+(10, NOW(), 'Em progresso'),
+(12, '2023-05-27', 'Em aberto');
+
 
 -- Inserindo dados na tabela "Mensagem"
 INSERT INTO Mensagem (IdChamado, IdUsuario, TextoComentario, CriadoEm)
@@ -93,4 +99,5 @@ VALUES
 (7, 7, 'Teclado usb não funciona em nenhuma entrada',NOW()),
 (8, 8, 'Monitor desliga no meio do atendimento a cada meia hora',NOW()),
 (9, 9, 'Computador não da sinal de energia e não liga',NOW()),
-(10, 10, 'Usuario está com o login bloqueado na vpn', NOW());
+(10, 10, 'Usuario está com o login bloqueado na vpn', NOW()),
+(12, 9, 'Internt não funciona', '2023-05-27');
