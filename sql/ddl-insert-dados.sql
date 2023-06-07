@@ -41,18 +41,26 @@ VALUES
 -- Inserindo dados na tabela "Chamado"
 INSERT INTO Chamado (IdUsuario, Titulo, Descricao, DataEntrega, Prioridade)
 VALUES
-(1, 'Telefone com problema', 'telefone não sai som', NOW(), 'Alta'),
-(2, 'Sistema', 'Sistema ERP, ', NOW(), 'Média'),
-(3, 'Chamado 3', 'Venda bloqueada', NOW(), 'Baixa'),
-(4, 'Chamado 4', 'Impressora sem fio não conecta', NOW(), 'Alta'),
-(5, 'Chamado 5', 'Sistema lento', NOW(), 'Média'),
-(6, 'Chamado 6', 'Computador não lê um pendrive', NOW(), 'Baixa'),
-(7, 'Chamado 7', 'Teclado não funciona', NOW(), 'Alta'),
-(8, 'Chamado 8', 'Monitor desligando de tempos em tempos', NOW(), 'Média'),
-(9, 'Chamado 9', 'Computador não liga', NOW(), 'Baixa'),
-(10, 'Chamado 10', 'Usuario não loga na vpn', NOW(), 'Alta'),
-(2, 'Chamado 11', 'Computador lento', NOW(), 'Média'),
-(9, 'Chamado 12', 'Internet não funciona', '2023-05-25', 'Média');
+(1, 'Telefone com problema', 'telefone não sai som', '2023-02-23', 'Alta'),
+(2, 'Sistema', 'Sistema ERP, ', '2023-02-15', 'Média'),
+(3, 'Chamado 3', 'Venda bloqueada', '2023-03-10', 'Baixa'),
+(4, 'Chamado 4', 'Impressora sem fio não conecta', '2023-03-13', 'Alta'),
+(5, 'Chamado 5', 'Sistema lento', '2023-03-20', 'Média'),
+(6, 'Chamado 6', 'Computador não lê um pendrive', '2023-03-25', 'Baixa'),
+(7, 'Chamado 7', 'Teclado não funciona', '2023-04-02', 'Alta'),
+(8, 'Chamado 8', 'Monitor desligando de tempos em tempos', '2023-04-10', 'Média'),
+(9, 'Chamado 9', 'Computador não liga', '2023-04-12', 'Baixa'),
+(10, 'Chamado 10', 'Usuario não loga na vpn', '2023-04-13', 'Alta'),
+(2, 'Chamado 11', 'Computador lento', '2023-04-15', 'Média'),
+(3, 'Chamado 12', 'Falhas no disco rígido', '2023-04-17', 'Média'),
+(3, 'Chamado 13', 'Problemas de memória RAM', '2023-04-18', 'Média'),
+(4, 'Chamado 14', 'Superaquecimento do CPU', '2023-04-19', 'Média'),
+(5, 'Chamado 15', 'Placa de vídeo defeituosa', '2023-04-20', 'Média'),
+(6, 'Chamado 16', 'Problemas na placa-mãe', '2023-04-21', 'Média'),
+(7, 'Chamado 17', 'Tela defeituosa', '2023-04-29', 'Média'),
+(8, 'Chamado 18', 'Tela defeituosa', '2023-04-29', 'Média'),
+(9, 'Chamado 19', 'Bateria esgotada', '2023-05-01', 'Média'),
+(10, 'Chamado 20', 'Teclado ou touchpad defeituosos', '2023-05-02', 'Média'),
 
 
 -- Inserindo dados na tabela "CategoriaChamado"
@@ -69,7 +77,16 @@ VALUES
 (9, 9),
 (10, 10),
 (11, 4),
-(12, 4);
+(12,1),
+(13,1),
+(14,1),
+(15,1),
+(16,1),
+(17,1),
+(18,1),
+(19,1),
+(20,1),
+
 
 -- Inserindo dados na tabela "Status"
 INSERT INTO Status (IdChamado, HorarioLembrete, Status)
