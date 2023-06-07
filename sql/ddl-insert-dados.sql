@@ -61,6 +61,7 @@ VALUES
 (8, 'Chamado 18', 'Tela defeituosa', '2023-04-29', 'Média'),
 (9, 'Chamado 19', 'Bateria esgotada', '2023-05-01', 'Média'),
 (10, 'Chamado 20', 'Teclado ou touchpad defeituosos', '2023-05-02', 'Média'),
+(10, 'Chamado 21', 'Tempo de esgotamento da sessão', '2023-07-01', 'Média');
 
 
 -- Inserindo dados na tabela "CategoriaChamado"
@@ -86,6 +87,7 @@ VALUES
 (18,1),
 (19,1),
 (20,1),
+(21,10);
 
 
 -- Inserindo dados na tabela "Status"
@@ -101,7 +103,8 @@ VALUES
 (8, NOW(), 'Aguardando'),
 (9, NOW(), 'Concluído'),
 (10, NOW(), 'Em progresso'),
-(12, '2023-05-27', 'Em aberto');
+(12, '2023-05-27', 'Em aberto'),
+(21, '2023-07-03', 'Aguardando');
 
 
 -- Inserindo dados na tabela "Mensagem"
@@ -117,4 +120,5 @@ VALUES
 (8, 8, 'Monitor desliga no meio do atendimento a cada meia hora',NOW()),
 (9, 9, 'Computador não da sinal de energia e não liga',NOW()),
 (10, 10, 'Usuario está com o login bloqueado na vpn', NOW()),
-(12, 9, 'Internt não funciona', '2023-05-27');
+(12, 9, 'Internt não funciona', '2023-05-27'),
+(21, 10, 'Problemas com tempo esgotado da sessão', '2023-07-03');
