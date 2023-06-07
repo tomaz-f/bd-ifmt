@@ -62,7 +62,8 @@ VALUES
 (9, 'Chamado 19', 'Bateria esgotada', '2023-05-01', 'Média'),
 (10, 'Chamado 20', 'Teclado ou touchpad defeituosos', '2023-05-02', 'Média'),
 (10, 'Chamado 21', 'Tempo de esgotamento da sessão', '2023-07-01', 'Média'),
-(10, 'Chamado 22', 'Conexão da VPN é rejeitada', '2023-08-05', 'Média');
+(10, 'Chamado 22', 'Conexão da VPN é rejeitada', '2023-08-05', 'Média'),
+(10, 'Chamado 23', 'Problemas ao estabelecer conexão com o computador remoto', '2023-05-05', 'Alta');
 
 
 -- Inserindo dados na tabela "CategoriaChamado"
@@ -89,7 +90,8 @@ VALUES
 (19,1),
 (20,1),
 (21,10),
-(22,10);
+(22,10),
+(23,10);
 
 
 -- Inserindo dados na tabela "Status"
@@ -107,7 +109,9 @@ VALUES
 (10, NOW(), 'Em progresso'),
 (12, '2023-05-27', 'Em aberto'),
 (21, '2023-07-03', 'Aguardando'),
-(22, '2023-08-06', 'Concluído');
+(22, '2023-08-06', 'Concluído'),
+(23, '2023-05-06', 'Aguardando');
+
 
 
 -- Inserindo dados na tabela "Mensagem"
@@ -124,5 +128,6 @@ VALUES
 (9, 9, 'Computador não da sinal de energia e não liga',NOW()),
 (10, 10, 'Usuario está com o login bloqueado na vpn', NOW()),
 (12, 9, 'Internt não funciona', '2023-05-27'),
-(21, 10, 'Problemas com tempo esgotado da sessão', '2023-07-03'),
-(22,10, 'A conexão VPN é regeitada');
+(21, 10, 'Problemas com tempo esgotado da sessão', '2023-07-04'),
+(22, 10, 'A conexão VPN é rejeitada', '2023-08-08'),
+(23, 10, 'Não é possível estabelecer uma conexão com o computador remoto', '2023-05-08');
