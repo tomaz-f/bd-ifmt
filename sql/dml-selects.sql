@@ -21,7 +21,7 @@ GROUP BY cat.Nome;
 --Consulta para listar os usuários com a quantidade de chamados associados a cada um:
 SELECT u.Nome, COUNT(c.IdChamado) AS TotalChamados
 FROM Usuario u
-LEFT JOIN Chamado c ON u.IdUsuario = c.IdUsuario
+INNER JOIN Chamado c ON u.IdUsuario = c.IdUsuario
 GROUP BY u.Nome;
 
 --Consulta para obter os chamados concluídos, juntamente com os detalhes do status e do usuário associado:
@@ -35,7 +35,7 @@ ORDER BY c.IdChamado;
 --Consulta para listar as categorias com a quantidade de chamados em cada uma, ordenadas pelo total de chamados em ordem decrescente:
 SELECT cat.Nome AS NomeCategoria, COUNT(cc.IdChamado) AS TotalChamados
 FROM Categoria cat
-LEFT JOIN CategoriaChamado cc ON cat.IdCategoria = cc.IdCategoria
+INNER JOIN CategoriaChamado cc ON cat.IdCategoria = cc.IdCategoria
 GROUP BY cat.Nome
 ORDER BY TotalChamados DESC;
 
