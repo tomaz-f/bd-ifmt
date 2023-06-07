@@ -81,7 +81,16 @@ VALUES
 (2, 'Chamado 48', 'Falta de integração com outros sistemas', '2023-04-19', 'Média'),
 (2, 'Chamado 49', 'Ausência de recursos de análise avançada', '2023-04-19', 'Média'),
 (2, 'Chamado 50', 'Problemas de escalabilidade', '2023-04-19', 'Média'),
-
+(1, 'Chamado 51', 'Login invalido', '2023-04- 22', 'Baixa'),
+(1, 'Chamado 52', 'Login invalido', '2023-04- 23', 'Baixa'),
+(1, 'Chamado 53', 'senha incorreta', '2023-04- 23', 'Baixa'),
+(1, 'Chamado 54', 'senha incorreta', '2023-04- 01', 'Baixa'),
+(10, 'Chamado 55', 'troca de senha', '2023-04- 01', 'Baixa'),
+(10, 'Chamado 56', 'troca de senha', '2023-04- 02', 'Baixa'),
+(10, 'Chamado 57', 'troca de senha', '2023-04- 010', 'Baixa'),
+(10, 'Chamado 58', 'Erros de acesso', '2023-04- 010', 'Baixa'),
+(9, 'Chamado 59', 'Erros de acesso', '2023-04- 011', 'Baixa'),
+(9, 'Chamado 60', 'Erros de acesso', '2023-04- 011', 'Baixa'),
 
 -- Inserindo dados na tabela "CategoriaChamado"
 INSERT INTO CategoriaChamado (IdChamado, IdCategoria)
@@ -126,12 +135,22 @@ VALUES
 (48,2),
 (49,2),
 (50,2),
+(51,3),
+(52,3),
+(53,3),
+(54,3),
+(55,3),
+(56,3),
+(57,3),
+(58,3),
+(59,3),
+(60,3),
 
 
 -- Inserindo dados na tabela "Status"
 INSERT INTO Status (IdChamado, HorarioLembrete, Status)
 VALUES
-(1, NOW(), 'Em progresso'),
+(1, NOW(), 'Em progresso'), 
 (2, NOW(), 'Aguardando'),
 (3, NOW(), 'Concluído'),
 (4, NOW(), 'Em progresso'),
