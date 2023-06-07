@@ -68,7 +68,19 @@ VALUES
 (8, 'Chamado 35', 'Falhas no disco rígido', '2023-05-05', 'Alta'),
 (7, 'Chamado 36', 'Superaquecimento do CPU', '2023-05-05', 'Alta'),
 (6, 'Chamado 37', 'Superaquecimento do CPU', '2023-05-05', 'Alta'),
-
+(6, 'Chamado 38', 'Problemas na placa-mãe', '2023-05-08', 'Baixa'),
+(6, 'Chamado 39', 'Teclado ou touchpad defeituosos', '2023-05-09', 'Baixa'),
+(5, 'Chamado 40', 'Problemas na placa-mãe', '2023-05-10', 'Baixa'),
+(5, 'Chamado 41', 'Integração incompleta', '2023-04-11', 'Baixa'),
+(5, 'Chamado 42', 'Desempenho lento', '2023-04-15', 'Baixa'),
+(4, 'Chamado 43', 'Falhas na atualização de dados', '2023-04-15', 'Baixa'),
+(3, 'Chamado 44', 'Problemas de segurança', '2023-04-18', 'Baixa'),
+(3, 'Chamado 45', 'Complexidade na personalização', '2023-04-18', 'Baixa'),
+(3, 'Chamado 46', 'Dados inconsistentes', '2023-04-18', 'Baixa'),
+(3, 'Chamado 47', 'Falta de adoção pelos usuários', '2023-04-18', 'Baixa'),
+(2, 'Chamado 48', 'Falta de integração com outros sistemas', '2023-04-19', 'Média'),
+(2, 'Chamado 49', 'Ausência de recursos de análise avançada', '2023-04-19', 'Média'),
+(2, 'Chamado 50', 'Problemas de escalabilidade', '2023-04-19', 'Média'),
 
 
 -- Inserindo dados na tabela "CategoriaChamado"
@@ -101,6 +113,19 @@ VALUES
 (35,1),
 (36,1),
 (37,1),
+(38,1),
+(39,1),
+(40,1),
+(41,2),
+(42,2),
+(43,2),
+(44,2),
+(45,2),
+(46,2),
+(47,2),
+(48,2),
+(49,2),
+(50,2),
 
 
 -- Inserindo dados na tabela "Status"
