@@ -23,12 +23,19 @@ VALUES
 ('Login', 'Erros de acesso, troca de senha, etc.'),
 --4
 ('Redes', 'Rede, internet, etc.'),
+--5
 ('Impressão', 'Impressora, scanner, etc.'),
+--6
 ('Softwares', 'Software, sistema operacional, etc.'),
+--7
 ('Financeiro', 'Pagamentos, recebimentos, etc.'),
+--8
 ('Vendas', 'Vendas, pedidos, etc.'),
+--9
 ('Comunicação', 'Telefone, e-mail, etc.'),
+--10
 ('Acesso Externo', 'VPN, acesso remoto, etc.'),
+--11
 ('Perifericos', 'Mouse e teclado, etc.');
 
 -- Inserindo dados na tabela "Chamado"
