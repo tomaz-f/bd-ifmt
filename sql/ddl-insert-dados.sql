@@ -69,7 +69,8 @@ VALUES
 (6, 'Chamado 26', 'Versão não suportada pelo fabricante', '2023-04-03', 'Alta'),
 (6, 'Chamado 27', 'Falha na criptografia', '2023-05-01', 'Alta'),
 (1, 'Chamado 28', 'Erros de inicialização', '2023-02-01', 'Alta'),
-(1, 'Chamado 29', 'Tela azul da morte', '2023-07-02', 'Alta');
+(1, 'Chamado 29', 'Tela azul da morte', '2023-07-02', 'Alta'),
+(4, 'Chamado 30', 'Conexão instável', '2023-08-01', 'Média');
  
  
 
@@ -105,7 +106,9 @@ VALUES
 (26,6),
 (27,6),
 (28,1),
-(29,1);
+(29,1),
+(30, 4);
+
 
 
 -- Inserindo dados na tabela "Status"
@@ -130,7 +133,8 @@ VALUES
 (26, '2023-04-05', 'Em progresso'),
 (27, '2023-05-02', 'Aguardando'),
 (28, '2023-02-01', 'Em progresso'),
-(29, '2023-07-03', ('Aguardando');
+(29, '2023-07-03', 'Aguardando'),
+(30, '2023-08-01', 'Concluído');
 
 
 
@@ -156,5 +160,6 @@ VALUES
 (26, 6, 'Versão do software não é mais suportada pelo fabricante', '2023-04-07'),
 (27, 6, 'Falhas na criptografia', '2023-05-04'),
 (28, 1, 'Erros de boots', '2023-02-04'),
-(29,  1, 'Problema na tela', '2023-07-05');
+(29, 1, 'Problema na tela', '2023-07-05'),
+(30, 4, 'Conexão caindo toda hora', '2023-08-04');
   
