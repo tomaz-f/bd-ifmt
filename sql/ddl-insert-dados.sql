@@ -68,7 +68,8 @@ VALUES
 (2, 'Chamado 25', 'Descentralização de dados', '2023-09-18', 'Alta'),
 (6, 'Chamado 26', 'Versão não suportada pelo fabricante', '2023-04-03', 'Alta'),
 (6, 'Chamado 27', 'Falha na criptografia', '2023-05-01', 'Alta'),
-(1, 'Chamado 28', 'Erros de inicialização', '2023-02-01', 'Alta');
+(1, 'Chamado 28', 'Erros de inicialização', '2023-02-01', 'Alta'),
+(1, 'Chamado 29', 'Tela azul da morte', '2023-07-02', 'Alta');
  
  
 
@@ -103,7 +104,8 @@ VALUES
 (25,2),
 (26,6),
 (27,6),
-(28,1);
+(28,1),
+(29,1);
 
 
 -- Inserindo dados na tabela "Status"
@@ -127,7 +129,8 @@ VALUES
 (25, '2023-09-20', 'Aguardando'),
 (26, '2023-04-05', 'Em progresso'),
 (27, '2023-05-02', 'Aguardando'),
-(28, '2023-02-01', 'Em progresso');
+(28, '2023-02-01', 'Em progresso'),
+(29, '2023-07-03', ('Aguardando');
 
 
 
@@ -152,5 +155,6 @@ VALUES
 (25, 2, 'Base de dados descentralizados', '2023-09-21'),
 (26, 6, 'Versão do software não é mais suportada pelo fabricante', '2023-04-07'),
 (27, 6, 'Falhas na criptografia', '2023-05-04'),
-(28, 1, 'Erros de boots', '2023-02-04');
+(28, 1, 'Erros de boots', '2023-02-04'),
+(29,  1, 'Problema na tela', '2023-07-05');
   
