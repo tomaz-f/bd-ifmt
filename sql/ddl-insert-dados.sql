@@ -64,7 +64,8 @@ VALUES
 (10, 'Chamado 21', 'Tempo de esgotamento da sessão', '2023-07-01', 'Média'),
 (10, 'Chamado 22', 'Conexão da VPN é rejeitada', '2023-08-05', 'Média'),
 (10, 'Chamado 23', 'Problemas ao estabelecer conexão com o computador remoto', '2023-05-05', 'Alta'),
-(8, 'Chamado 24', 'Falha ao processar à venda', '2023-09-09', 'Alta');
+(8, 'Chamado 24', 'Falha ao processar à venda', '2023-09-09', 'Alta'),
+(2, 'Chamado 25', 'Descentralização de dados', '2023-09-18');
 
 
 -- Inserindo dados na tabela "CategoriaChamado"
@@ -93,7 +94,9 @@ VALUES
 (21,10),
 (22,10),
 (23,10),
-(24,8);
+(24,8),
+(25,2);
+
 
 
 -- Inserindo dados na tabela "Status"
@@ -113,7 +116,8 @@ VALUES
 (21, '2023-07-03', 'Aguardando'),
 (22, '2023-08-06', 'Concluído'),
 (23, '2023-05-06', 'Aguardando'),
-(24, '2023-09-10', 'Em aberto');
+(24, '2023-09-10', 'Em aberto'),
+(25, '2023-09-20', 'Aguardando');
 
 
 
@@ -134,4 +138,6 @@ VALUES
 (21, 10, 'Problemas com tempo esgotado da sessão', '2023-07-04'),
 (22, 10, 'A conexão VPN é rejeitada', '2023-08-08'),
 (23, 10, 'Não é possível estabelecer uma conexão com o computador remoto', '2023-05-08'),
-(24, 8, 'Venda não pode ser processada', '2023-09-12');
+(24, 8, 'Venda não pode ser processada', '2023-09-12'),
+(25,2, 'Base de dados descentralizados', '2023-09-21';       
+  
