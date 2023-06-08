@@ -66,7 +66,9 @@ VALUES
 (10, 'Chamado 23', 'Problemas ao estabelecer conexão com o computador remoto', '2023-05-05', 'Alta'),
 (8, 'Chamado 24', 'Falha ao processar à venda', '2023-09-09', 'Alta'),
 (2, 'Chamado 25', 'Descentralização de dados', '2023-09-18', 'Alta'),
-(6, 'Chamado 26', 'Versão não suportada pelo fabricante', 2023-04-03', 'Alta');
+(6, 'Chamado 26', 'Versão não suportada pelo fabricante', '2023-04-03', 'Alta'),
+(6, 'Chamado 27', 'Falha na criptografia', '2023-05-01', 'Alta');
+ 
  
 
 
@@ -98,7 +100,8 @@ VALUES
 (23,10),
 (24,8),
 (25,2),
-(26,6);
+(26,6),
+(27,6);
 
 
 -- Inserindo dados na tabela "Status"
@@ -120,7 +123,8 @@ VALUES
 (23, '2023-05-06', 'Aguardando'),
 (24, '2023-09-10', 'Em aberto'),
 (25, '2023-09-20', 'Aguardando'),
-(26, '2023-04-05', 'Em progresso');
+(26, '2023-04-05', 'Em progresso'),
+(27, '2023-05-02', 'Aguardando');                              
 
 
 
@@ -143,5 +147,6 @@ VALUES
 (23, 10, 'Não é possível estabelecer uma conexão com o computador remoto', '2023-05-08'),
 (24, 8, 'Venda não pode ser processada', '2023-09-12'),
 (25,2, 'Base de dados descentralizados', '2023-09-21'),
-(26,6, 'Versão do software não é mais suportada pelo fabricante', '2023-04-07');
+(26,6, 'Versão do software não é mais suportada pelo fabricante', '2023-04-07'),
+(27,6, 'Falhas na criptografia', '2023-05-04');
   
