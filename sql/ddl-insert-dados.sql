@@ -65,7 +65,9 @@ VALUES
 (10, 'Chamado 22', 'Conexão da VPN é rejeitada', '2023-08-05', 'Média'),
 (10, 'Chamado 23', 'Problemas ao estabelecer conexão com o computador remoto', '2023-05-05', 'Alta'),
 (8, 'Chamado 24', 'Falha ao processar à venda', '2023-09-09', 'Alta'),
-(2, 'Chamado 25', 'Descentralização de dados', '2023-09-18');
+(2, 'Chamado 25', 'Descentralização de dados', '2023-09-18', 'Alta'),
+(6, 'Chamado 26', 'Versão não suportada pelo fabricante', 2023-04-03', 'Alta');
+ 
 
 
 -- Inserindo dados na tabela "CategoriaChamado"
@@ -95,8 +97,8 @@ VALUES
 (22,10),
 (23,10),
 (24,8),
-(25,2);
-
+(25,2),
+(26,6);
 
 
 -- Inserindo dados na tabela "Status"
@@ -117,7 +119,8 @@ VALUES
 (22, '2023-08-06', 'Concluído'),
 (23, '2023-05-06', 'Aguardando'),
 (24, '2023-09-10', 'Em aberto'),
-(25, '2023-09-20', 'Aguardando');
+(25, '2023-09-20', 'Aguardando'),
+(26, '2023-04-05', 'Em progresso');
 
 
 
@@ -139,5 +142,6 @@ VALUES
 (22, 10, 'A conexão VPN é rejeitada', '2023-08-08'),
 (23, 10, 'Não é possível estabelecer uma conexão com o computador remoto', '2023-05-08'),
 (24, 8, 'Venda não pode ser processada', '2023-09-12'),
-(25,2, 'Base de dados descentralizados', '2023-09-21';       
+(25,2, 'Base de dados descentralizados', '2023-09-21'),
+(26,6, 'Versão do software não é mais suportada pelo fabricante', '2023-04-07');
   
