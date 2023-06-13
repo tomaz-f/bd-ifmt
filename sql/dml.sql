@@ -4,40 +4,40 @@ VALUES ('Thiago', 'thiago@email.com', 'th123');
 
 UPDATE Usuario
 SET Senha = 'Th#123'
-WHERE IdUsuario = 1;
+WHERE IdUsuario = 11;
 
 DELETE FROM Usuario
-WHERE IdUsuario = 2;
+WHERE IdUsuario = 11;
 
 -- DML PARA TABELA CHAMADO
 INSERT INTO Chamado (IdUsuario, Titulo, Descricao, DataEntrega, Prioridade)
-VALUES (1, 'Chamado 13', 'Liberação de novo usuario', '2023-06-07', 'Alta');
+VALUES (1, 'Chamado 61', 'Liberação de novo usuario', '2023-06-07', 'Alta');
 
 UPDATE Chamado
 SET Prioridade = 'Baixa'
-WHERE IdChamado = 3;
+WHERE IdChamado = 61;
 
 DELETE FROM Chamado
-WHERE IdChamado = 4;
+WHERE IdChamado = 61;
 
 -- DML PARA TABELA CATEGORIA
 INSERT INTO Categoria (Nome, Descricao)
-VALUES ('Financeiro', 'Problemas com pagamentos ou recebimentos');
+VALUES ('Teste', 'Problemas com pagamentos ou recebimentos');
 
 UPDATE Categoria
 SET Descricao = 'Sistema ERP'
-WHERE IdCategoria = 2;
+WHERE IdCategoria = 12;
 
 DELETE FROM Categoria
-WHERE IdCategoria = 3;
+WHERE IdCategoria = 12;
 
 -- DML PARA TABELA CATEGORIACHAMADO
 INSERT INTO CategoriaChamado (IdChamado, IdCategoria)
-VALUES (1, 2);
+VALUES (60, 11);
 
 UPDATE CategoriaChamado
-SET IdCategoria = 4
-WHERE IdCategoriaChamado = 3;
+SET IdCategoria = 60
+WHERE IdCategoriaChamado = 60;
 
 DELETE FROM CategoriaChamado
 WHERE IdCategoriaChamado = 5;
