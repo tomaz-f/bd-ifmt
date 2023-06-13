@@ -1,5 +1,5 @@
 -- Tabela Usuario
-CREATE TABLE IF NOT EXISTS Usuario (
+CREATE TABLE IF NOT EXISTS Usuario(
     IdUsuario SERIAL PRIMARY KEY,
     Nome VARCHAR(50) NOT NULL,
     Email VARCHAR(50) NOT NULL,
