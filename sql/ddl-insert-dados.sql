@@ -61,6 +61,16 @@ VALUES
 (8, 'Chamado 18', 'Tela defeituosa', '2023-04-29', 'Média'),
 (9, 'Chamado 19', 'Bateria esgotada', '2023-05-01', 'Média'),
 (10, 'Chamado 20', 'Teclado ou touchpad defeituosos', '2023-05-02', 'Média'),
+(10, 'Chamado 21', 'Tempo de esgotamento da sessão', '2023-07-01', 'Média'),
+(10, 'Chamado 22', 'Conexão da VPN é rejeitada', '2023-08-05', 'Média'),
+(10, 'Chamado 23', 'Problemas ao estabelecer conexão com o computador remoto', '2023-05-05', 'Alta'),
+(8, 'Chamado 24', 'Falha ao processar à venda', '2023-09-09', 'Alta'),
+(2, 'Chamado 25', 'Descentralização de dados', '2023-09-18', 'Alta'),
+(6, 'Chamado 26', 'Versão não suportada pelo fabricante', '2023-04-03', 'Alta'),
+(6, 'Chamado 27', 'Falha na criptografia', '2023-05-01', 'Alta'),
+(1, 'Chamado 28', 'Erros de inicialização', '2023-02-01', 'Alta'),
+(1, 'Chamado 29', 'Tela azul da morte', '2023-07-02', 'Alta'),
+(4, 'Chamado 30', 'Conexão instável', '2023-08-01', 'Média');
 (10, 'Chamado 31', 'Conexões de rede defeituosas', '2023-05-02', 'Média'),
 (9, 'Chamado 32', 'Problemas de alimentação', '2023-05-03', 'Alta'),
 (8, 'Chamado 33', 'Problemas de alimentação', '2023-05-03', 'Média'),
@@ -115,6 +125,16 @@ VALUES
 (18,1),
 (19,1),
 (20,1),
+(21,10),
+(22,10),
+(23,10),
+(24,8),
+(25,2),
+(26,6),
+(27,6),
+(28,1),
+(29,1),
+(30,4),
 (31,1),
 (32,1),
 (33,1),
@@ -144,7 +164,7 @@ VALUES
 (57,3),
 (58,3),
 (59,3),
-(60,3),
+(60,3);
 
 
 -- Inserindo dados na tabela "Status"
@@ -160,7 +180,18 @@ VALUES
 (8, NOW(), 'Aguardando'),
 (9, NOW(), 'Concluído'),
 (10, NOW(), 'Em progresso'),
-(12, '2023-05-27', 'Em aberto');
+(12, '2023-05-27', 'Em aberto'),
+(21, '2023-07-03', 'Aguardando'),
+(22, '2023-08-06', 'Concluído'),
+(23, '2023-05-06', 'Aguardando'),
+(24, '2023-09-10', 'Em aberto'),
+(25, '2023-09-20', 'Aguardando'),
+(26, '2023-04-05', 'Em progresso'),
+(27, '2023-05-02', 'Aguardando'),
+(28, '2023-02-01', 'Em progresso'),
+(29, '2023-07-03', 'Aguardando'),
+(30, '2023-08-01', 'Concluído');
+
 
 
 -- Inserindo dados na tabela "Mensagem"
@@ -176,4 +207,15 @@ VALUES
 (8, 8, 'Monitor desliga no meio do atendimento a cada meia hora',NOW()),
 (9, 9, 'Computador não da sinal de energia e não liga',NOW()),
 (10, 10, 'Usuario está com o login bloqueado na vpn', NOW()),
-(12, 9, 'Internt não funciona', '2023-05-27');
+(12, 9, 'Internt não funciona', '2023-05-27'),
+(21, 10, 'Problemas com tempo esgotado da sessão', '2023-07-04'),
+(22, 10, 'A conexão VPN é rejeitada', '2023-08-08'),
+(23, 10, 'Não é possível estabelecer uma conexão com o computador remoto', '2023-05-08'),
+(24, 8, 'Venda não pode ser processada', '2023-09-12'),
+(25, 2, 'Base de dados descentralizados', '2023-09-21'),
+(26, 6, 'Versão do software não é mais suportada pelo fabricante', '2023-04-07'),
+(27, 6, 'Falhas na criptografia', '2023-05-04'),
+(28, 1, 'Erros de boots', '2023-02-04'),
+(29, 1, 'Problema na tela', '2023-07-05'),
+(30, 4, 'Conexão caindo toda hora', '2023-08-04');
+  
