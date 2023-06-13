@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Chamado (
     IdChamado SERIAL PRIMARY KEY,
     IdUsuario INTEGER REFERENCES Usuario(IdUsuario),
     Titulo VARCHAR(50) NOT NULL,
-    Descricao VARCHAR(50) NOT NULL,
+    Descricao VARCHAR(200) NOT NULL,
     DataEntrega TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     Prioridade VARCHAR(50) NOT NULL
 );
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS Chamado (
 CREATE TABLE IF NOT EXISTS Categoria (
     IdCategoria SERIAL PRIMARY KEY,
     Nome VARCHAR(50) NOT NULL,
-    Descricao VARCHAR(100) NOT NULL
+    Descricao VARCHAR(500) NOT NULL
 );
 
 -- Tabela CategoriaChamado
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS Status (
     IDStatus INTEGER,
     IdChamado INTEGER REFERENCES Chamado(IdChamado),
     HorarioLembrete TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    Status VARCHAR(50) NOT NULL
+    Status VARCHAR(200) NOT NULL
 );
 
 

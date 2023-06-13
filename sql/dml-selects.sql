@@ -14,15 +14,16 @@ ORDER BY c.DataEntrega;
 --Consulta para contar o número de chamados por categoria:
 SELECT cat.Nome AS NomeCategoria, COUNT(*) AS TotalChamados
 FROM Categoria cat
-JOIN CategoriaChamado cc ON cat.IdCategoria = cc.IdCategoria
-JOIN Chamado c ON cc.IdChamado = c.IdChamado
-GROUP BY cat.Nome;
+INNER JOIN CategoriaChamado cc ON cat.IdCategoria = cc.IdCategoria
+GROUP BY cat.Nome
+ORDER BY TotalChamados DESC;
 
 --Consulta para listar os usuários com a quantidade de chamados associados a cada um:
 SELECT u.Nome, COUNT(c.IdChamado) AS TotalChamados
 FROM Usuario u
 INNER JOIN Chamado c ON u.IdUsuario = c.IdUsuario
-GROUP BY u.Nome;
+GROUP BY u.Nome
+ORDER BY TotalChamados Desc;
 
 --Consulta para obter os chamados concluídos, juntamente com os detalhes do status e do usuário associado:
 SELECT c.IdChamado, c.Titulo, s.Status, u.Nome AS NomeUsuario
@@ -54,7 +55,8 @@ INNER JOIN (
     FROM Chamado
     GROUP BY IdUsuario
 ) chamados_por_usuario ON u.IdUsuario = chamados_por_usuario.IdUsuario
-GROUP BY u.Nome;
+GROUP BY u.Nome
+ORDER BY MediaChamados DESC;
 
 
 --Consulta para obter os chamados ordenados pela quantidade de comentários associados a cada um:
